@@ -1,0 +1,50 @@
+\documentclass[12pt,runningheads]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,hyperref,array,xcolor,multicol,verbatim,mathpazo}
+\usepackage[normalem]{ulem}
+\usepackage[pdftex]{graphicx}
+\begin{document}
+
+%%%% In most cases you won't need to edit anything above this line %%%%
+
+\title{Segundo EP}
+\author{Felipe Miyazato - 8944453}
+\maketitle
+
+\section{Questão 1}
+\subsection{Equação do movimento para \(\vec{r}_1\)}
+Igualando a segunda equação de Newton para o corpo 1,
+\[\vec{F}_1 = m_1 \frac{d^2\vec{r}_1}{dt^2}\]
+e sua lei da gravitação universal,
+\[\vec{F}_1 = G m_1 m_i \frac{\vec{r}_i - \vec{r}_1}{|\vec{r}_i - \vec{r}_1|^3}\]
+obtemos
+\[m_1 \frac{d^2\vec{r}_1}{dt^2} = \sum_i G m_1 m_i \frac{\vec{r}_i - \vec{r}_1}{|\vec{r}_i - \vec{r}_1|^3}\]
+Simplificando para o problema dos 3 corpos
+\[\frac{d^2\vec{r}_1}{dt^2} = -G m_2 \frac{\vec{r_1} - \vec{r_2}}{|\vec{r_1} - \vec{r_2}|^3} - G m_3 \frac{\vec{r_1} - \vec{r_3}}{|\vec{r_1} - \vec{r_3}|^3}\]
+\newpage
+
+\subsection{Equações análogas para \(\vec{r}_2\) e \(\vec{r}_3\)}
+Analogamente
+\[\frac{d^2\vec{r}_2}{dt^2} = -G m_1 \frac{\vec{r_2} - \vec{r_1}}{|\vec{r_2} - \vec{r_1}|^3} - G m_3 \frac{\vec{r_2} - \vec{r_3}}{|\vec{r_2} - \vec{r_3}|^3}\]
+\[\frac{d^2\vec{r}_3}{dt^2} = -G m_1 \frac{\vec{r_3} - \vec{r_1}}{|\vec{r_3} - \vec{r_1}|^3} - G m_2 \frac{\vec{r_3} - \vec{r_2}}{|\vec{r_3} - \vec{r_2}|^3}\]
+
+\subsection{Conversão para sistema de primeira ordem}
+Definindo
+\[\vec{v}_i = \frac{d\vec{r}_i}{dt}\]
+obtemos
+\[\frac{d\vec{r}_1}{dt} = \vec{v}_1\]
+\[\frac{d\vec{v}_1}{dt} = -G m_2 \frac{\vec{r_1} - \vec{r_2}}{|\vec{r_1} - \vec{r_2}|^3} - G m_3 \frac{\vec{r_1} - \vec{r_3}}{|\vec{r_1} - \vec{r_3}|^3}\]
+\[\frac{d\vec{r}_2}{dt} = \vec{v}_2\]
+
+\[\frac{d\vec{v}_2}{dt} = -G m_1 \frac{\vec{r_2} - \vec{r_1}}{|\vec{r_2} - \vec{r_1}|^3} - G m_3 \frac{\vec{r_2} - \vec{r_3}}{|\vec{r_2} - \vec{r_3}|^3}\]
+\[\frac{d\vec{r}_3}{dt} = \vec{v}_3\]
+\[\frac{d\vec{v}_3}{dt} = -G m_1 \frac{\vec{r_3} - \vec{r_1}}{|\vec{r_3} - \vec{r_1}|^3} - G m_2 \frac{\vec{r_3} - \vec{r_2}}{|\vec{r_3} - \vec{r_2}|^3}\]
+
+\newpage
+
+\section{Questão 2}
+Não vamos usar as estimativas de erro da integração numérica para as variáveis de velocidade, pois é uma variável introduzida em nossa solução apenas para generalizar os métodos de integração numérica de equações de diferença de primeira ordem para ordens superiores.
+
+As simetrias inerentes da teoria de mecânica clássica nos convidam a usar a norma euclideana para medir estimativas dos erros, assim implementou-se.
+
+\end{document}
