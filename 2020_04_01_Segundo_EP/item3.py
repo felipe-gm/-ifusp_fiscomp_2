@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 from numpy import arange, array, concatenate
 from numpy import linalg as LA
 
-from vpython import sphere,vector,color,rate,textures,local_light,     scene,attach_trail
+from vpython import sphere,vector,color,rate,scene,attach_trail
 
 
 # Variaveis globais
@@ -31,13 +31,13 @@ scene.width = 1200 # Ajustando a largura da cena
 scene.height =1000 # Ajustando a altura da cena
 scene.center = vector(0,0,0) # Ajustando o centro da cena
 
-estrela1 = sphere(color=color.red,radius=150.**(1./3.)/100., make_trail=True) # Esfera para representar o Sol
+estrela1 = sphere(color=color.red,radius=150./1e4, make_trail=True) # Esfera para representar o Sol
 estrela1.emissive = True
 
-estrela2 = sphere(color=color.yellow,radius=200.**(1./3.)/100., make_trail=True) # Esfera para representar o Sol
+estrela2 = sphere(color=color.yellow,radius=200./1e4, make_trail=True) # Esfera para representar o Sol
 estrela2.emissive = True
 
-estrela3 = sphere(color=color.blue,radius=250.**(1./3.)/100., make_trail=True) # Esfera para representar o Sol
+estrela3 = sphere(color=color.blue,radius=250./1e4, make_trail=True) # Esfera para representar o Sol
 estrela3.emissive = True
 
 
