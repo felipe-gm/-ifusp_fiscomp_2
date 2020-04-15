@@ -160,7 +160,7 @@ while t<=b:
     rate(C/h)
     estrela1.pos = vector(r[0],r[1],0)
     estrela2.pos = vector(r[4],r[5],0)
-    estrela2.pos = vector(r[8],r[9],0)
+    estrela3.pos = vector(r[8],r[9],0)
     dr, h_atual, h_prox = passo_adapt_extloc(f,r,t,h,prec)
     t, r = t + h_atual, r + dr
     h = min(1e-4,h_prox)
