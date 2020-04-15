@@ -101,7 +101,6 @@ def main():
     x1_lista, y1_lista = [], []
     x2_lista, y2_lista = [], []
     x3_lista, y3_lista = [], [] 
-    tlist, hlist = [], [] 
 
     while t<=b:
         x1_lista.append(r[0])
@@ -110,8 +109,6 @@ def main():
         y2_lista.append(r[5])
         x3_lista.append(r[8])
         y3_lista.append(r[9])
-        tlist.append(t)
-        hlist.append(h)
         dr, h_atual, h_prox = passo_adapt_extloc(f,r,t,h,prec)
         t, r = t + h_atual, r + dr
         h = h_prox
