@@ -1,13 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# <a href="https://colab.research.google.com/github/felipe-gm/ifusp_fiscomp_2/blob/master/2020_04_01/Questao1_1e2.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-# Related third party imports
-
-# In[ ]:
-
-
 import matplotlib.pyplot as plt
 
 from numpy import arange, array, sin, cos, arccos, exp
