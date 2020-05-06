@@ -69,5 +69,5 @@ while abs(y2-y1) > prec:
         y2, altura2 = yp, alturap            # Nao; diminuímos o palpite 'y2'
 y = (y1+y2)/2       # Resultado final do calculo
 
-print('Altura inicial necessaria eh: ',y)
+print('Altura inicial necessaria eh: ',y,' m')
 
